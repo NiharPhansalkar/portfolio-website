@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-const Computers = () => {
+const Computers = ({ mobileView }) => {
   const computer = useGLTF("/desktop_pc/scene.gltf");
   return (
     <mesh>
@@ -19,8 +19,8 @@ const Computers = () => {
       />
       <primitive
         object={computer.scene}
-        scale={0.75}
-        position={[0, -3.25, -1.5]}
+        scale={mobileView ? 0.65 : 0.75}
+        position={mobileView ? [-0.2, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
         style={{
           marginBottom: "1.2rem",
@@ -31,6 +31,21 @@ const Computers = () => {
 };
 
 const ComputersCanvas = () => {
+  const [mobileView, setMobileView] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width:500px)");
+    setMobileView(mediaQuery.matches);
+    mediaQuery.addEventListener("change", handleScreenChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleScreenChange);
+    };
+  });
+
+  const handleScreenChange = (e) => {
+    setMobileView(e.matches);
+  };
   return (
     <Canvas
       frameLoop="demand"
@@ -44,7 +59,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers />
+        <Computers mobileView={mobileView} />
       </Suspense>
       <Preload all />
     </Canvas>
