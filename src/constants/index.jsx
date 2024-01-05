@@ -4,16 +4,18 @@ import {
   creator,
   web,
   javascript,
-  typescript,
-  html,
-  css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
+  podman,
+  c_lang,
+  cpp,
+  java,
+  kubernetes,
+  linux,
+  postgresql,
   docker,
   avegen,
   carrent,
@@ -58,28 +60,16 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "Linux",
+    icon: linux,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -94,20 +84,40 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: "Postgres",
+    icon: postgresql,
+  },
+  {
     name: "Three JS",
     icon: threejs,
+  },
+  {
+    name: "Kubernetes",
+    icon: kubernetes,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "podman",
+    icon: podman,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "C",
+    icon: c_lang,
+  },
+  {
+    name: "C++",
+    icon: cpp,
   },
 ];
 

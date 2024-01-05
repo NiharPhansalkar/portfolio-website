@@ -9,7 +9,6 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -20,6 +19,14 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import linux from "./tech/linux.png";
+import java from "./tech/java.png";
+import postgresql from "./tech/postgresql.png";
+import podman from "./tech/podman.png";
+import c_lang from "./tech/C.png";
+import cpp from "./tech/cpp.png";
+import bash from "./tech/bash.png";
+import kubernetes from "./tech/kubernetes.png";
 
 import avegen from "./company/avegen.jpg";
 
@@ -38,7 +45,6 @@ export {
   close,
   css,
   docker,
-  figma,
   git,
   html,
   javascript,
@@ -49,6 +55,14 @@ export {
   tailwind,
   typescript,
   threejs,
+  linux,
+  java,
+  postgresql,
+  podman,
+  c_lang,
+  cpp,
+  bash,
+  kubernetes,
   avegen,
   carrent,
   jobit,
