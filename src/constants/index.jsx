@@ -8,7 +8,6 @@ import {
   tailwind,
   nodejs,
   mongodb,
-  git,
   podman,
   c_lang,
   cpp,
@@ -18,10 +17,11 @@ import {
   postgresql,
   docker,
   avegen,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  chess_wiz,
+  quickpick,
+  todolo,
+  auto_schedule,
+  peoples_lens,
 } from "../assets";
 
 export const navLinks = [
@@ -88,16 +88,8 @@ const technologies = [
     icon: postgresql,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "Kubernetes",
     icon: kubernetes,
-  },
-  {
-    name: "git",
-    icon: git,
   },
   {
     name: "docker",
@@ -136,97 +128,125 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
-    name: "Car Rent",
+    name: "Chess Wiz",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A multiplayer chess game where people can share their room codes and play chess together.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "socketio",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "nodejs",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: chess_wiz,
+    source_code_link: "https://github.com/NiharPhansalkar/chess-wiz",
   },
   {
-    name: "Job IT",
+    name: "QuickPick",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A MERN (MySQL) stack e-commerce website for buying your favorite groceries.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "MySQL",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "ExpressJS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: quickpick,
+    source_code_link: "https://github.com/NiharPhansalkar/quickpick",
   },
   {
-    name: "Trip Guide",
+    name: "Todolo",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A MERN stack todo application so that you never forget the small things that actually matter.",
     tags: [
       {
-        name: "nextjs",
+        name: "MongoDB",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "ExpressJS",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "React",
         color: "pink-text-gradient",
       },
+      {
+        name: "NodeJS",
+        color: "blue-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: todolo,
+    source_code_link: "https://github.com/NiharPhansalkar/todolo",
+  },
+  {
+    name: "Event Auto Schedule",
+    description:
+      "A MERN stack event scheduling application where the user (and their team) have to scan a QR code and they will get the timeslot for when they can participate in the event (based on queue of previous players).",
+    tags: [
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ExpressJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: auto_schedule,
+    source_code_link:
+      "https://github.com/NiharPhansalkar/techfest-auto-schedule",
+  },
+  {
+    name: "People's Lens",
+    description:
+      "A best paper winning project created using HTML, CSS and JS where in cases of busy conferences, a user signed up for people's lens can identify individuals by scanning their faces and finding out if the person is of their domain in order to build professional connections faster.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: peoples_lens,
+    source_code_link: "https://github.com/NiharPhansalkar/peoples-lens",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

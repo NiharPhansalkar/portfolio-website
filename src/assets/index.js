@@ -9,7 +9,6 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
@@ -18,21 +17,21 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 import linux from "./tech/linux.png";
 import java from "./tech/java.png";
 import postgresql from "./tech/postgresql.png";
 import podman from "./tech/podman.png";
 import c_lang from "./tech/C.png";
 import cpp from "./tech/cpp.png";
-import bash from "./tech/bash.png";
 import kubernetes from "./tech/kubernetes.png";
 
 import avegen from "./company/avegen.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import chess_wiz from "./chess_wiz.jpg";
+import quickpick from "./quickpick.png";
+import todolo from "./todolo.png";
+import auto_schedule from "./auto_schedule.png";
+import peoples_lens from "./peoples_lens.png";
 
 export {
   logo,
@@ -45,7 +44,6 @@ export {
   close,
   css,
   docker,
-  git,
   html,
   javascript,
   mongodb,
@@ -54,17 +52,17 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
   linux,
   java,
   postgresql,
   podman,
   c_lang,
   cpp,
-  bash,
   kubernetes,
   avegen,
-  carrent,
-  jobit,
-  tripguide,
+  chess_wiz,
+  quickpick,
+  todolo,
+  auto_schedule,
+  peoples_lens,
 };
