@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -18,6 +18,20 @@ import {
 } from "./components";
 
 function App() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <Router>
       <div className="relative z-0 bg-primary">
@@ -27,7 +41,7 @@ function App() {
         </div>
         <About />
         <Experience />
-        <Tech />
+        {isMobile ? null : <Tech />}
         <Works />
         <div className="relative z-0">
           <Contact />
